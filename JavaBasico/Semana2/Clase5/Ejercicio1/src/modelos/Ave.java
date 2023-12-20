@@ -10,7 +10,8 @@ public class Ave extends Animal {
     public Ave() {
     }
 
-    public Ave(Double envergaduraAlas, String tipoVuelo, String colorPlumaje, String tipoPico) {
+    public Ave(Double envergaduraAlas, String tipoVuelo, String colorPlumaje, String tipoPico, int id, String nombre, int edad, String tipoPiel, String tipoAlimentacion) {
+        super(id, nombre, edad, tipoPiel, tipoAlimentacion);
         this.envergaduraAlas = envergaduraAlas;
         this.tipoVuelo = tipoVuelo;
         this.colorPlumaje = colorPlumaje;

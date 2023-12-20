@@ -12,13 +12,14 @@ public class Mamifero extends Animal {
     public Mamifero() {
     }
 
-    public Mamifero(int numPatas, String reproduccion, String colorPelaje, String habitat) {
+    public Mamifero(int numPatas, String reproduccion, String colorPelaje, String habitat, int id, String nombre, int edad, String tipoPiel, String tipoAlimentacion) {
+        super(id, nombre, edad, tipoPiel, tipoAlimentacion);
         this.numPatas = numPatas;
         this.reproduccion = reproduccion;
         this.colorPelaje = colorPelaje;
         this.habitat = habitat;
     }
-
+    
     public int getNumPatas() {
         return numPatas;
     }

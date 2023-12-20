@@ -10,7 +10,8 @@ public class Reptil extends Animal {
     public Reptil() {
     }
 
-    public Reptil(Double longitud, String tipoEscamas, String tipoVeneno, String habitat) {
+    public Reptil(Double longitud, String tipoEscamas, String tipoVeneno, String habitat, int id, String nombre, int edad, String tipoPiel, String tipoAlimentacion) {
+        super(id, nombre, edad, tipoPiel, tipoAlimentacion);
         this.longitud = longitud;
         this.tipoEscamas = tipoEscamas;
         this.tipoVeneno = tipoVeneno;

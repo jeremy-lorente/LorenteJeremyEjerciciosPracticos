@@ -20,6 +20,8 @@ public class Ejercicio1 {
 
         //D) 
         // No se puede convertir un animal en un mamifero 
+        // pero si que se podria convertir un mamifero en un animal
+        
         // mamifero = animal;
         
         //E) 
