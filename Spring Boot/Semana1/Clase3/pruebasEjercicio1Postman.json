@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "ce8b09ec-b2dc-46b4-b85c-44bf52708379",
+		"name": "Gestion Eventos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "32576345"
+	},
+	"item": [
+		{
+			"name": "crear unico Evento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"titulo\": \"Conferencia de Ciencias Computacionales\",\r\n    \"descripcion\": \"Una conferencia sobre los avances en inteligencia artificial y aprendizaje automático.\",\r\n    \"fecha\": \"2023-12-15\",\r\n    \"hora\": \"10:00\",\r\n    \"lugar\": \"Aula Magna Centro del Conocimiento\",\r\n    \"ponente\": \"Dr. Esteban Madrazzo\"\r\n  },\r\n  {\r\n    \"titulo\": \"Taller de Desarrollo Web\",\r\n    \"descripcion\": \"Un taller práctico sobre desarrollo web y tecnologías modernas.\",\r\n    \"fecha\": \"2023-11-20\",\r\n    \"hora\": \"14:30\",\r\n    \"lugar\": \"Sala de Conferencias TechHub\",\r\n    \"ponente\": \"Ing. María González\"\r\n  },\r\n  {\r\n    \"titulo\": \"Hackathon de Innovación\",\r\n    \"descripcion\": \"Un evento de 24 horas para desarrollar soluciones innovadoras.\",\r\n    \"fecha\": \"2024-02-05\",\r\n    \"hora\": \"18:00\",\r\n    \"lugar\": \"Espacio de Coworking Creativo\",\r\n    \"ponente\": \"Dr. Carlos Ramírez\"\r\n  },\r\n  {\r\n    \"titulo\": \"Charla sobre Ciberseguridad\",\r\n    \"descripcion\": \"Una charla informativa sobre las últimas tendencias en ciberseguridad.\",\r\n    \"fecha\": \"2023-10-08\",\r\n    \"hora\": \"12:45\",\r\n    \"lugar\": \"Auditorio de Seguridad Digital\",\r\n    \"ponente\": \"Dra. Laura Fernández\"\r\n  },\r\n  {\r\n    \"titulo\": \"Curso de Machine Learning\",\r\n    \"descripcion\": \"Un curso intensivo sobre machine learning y sus aplicaciones prácticas.\",\r\n    \"fecha\": \"2024-03-15\",\r\n    \"hora\": \"09:30\",\r\n    \"lugar\": \"Laboratorio de Investigación en IA\",\r\n    \"ponente\": \"Prof. Javier Torres\"\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/eventos"
+			},
+			"response": []
+		},
+		{
+			"name": "crear varios Eventos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"titulo\": \"Conferencia de Ciencias Computacionales\",\r\n    \"descripcion\": \"Una conferencia sobre los avances en inteligencia artificial y aprendizaje automático.\",\r\n    \"fecha\": \"2023-12-15\",\r\n    \"hora\": \"10:00\",\r\n    \"lugar\": \"Aula Magna Centro del Conocimiento\",\r\n    \"ponente\": \"Dr. Esteban Madrazzo\"\r\n  },\r\n  {\r\n    \"titulo\": \"Taller de Desarrollo Web\",\r\n    \"descripcion\": \"Un taller práctico sobre desarrollo web y tecnologías modernas.\",\r\n    \"fecha\": \"2023-11-20\",\r\n    \"hora\": \"14:30\",\r\n    \"lugar\": \"Sala de Conferencias TechHub\",\r\n    \"ponente\": \"Ing. María González\"\r\n  },\r\n  {\r\n    \"titulo\": \"Hackathon de Innovación\",\r\n    \"descripcion\": \"Un evento de 24 horas para desarrollar soluciones innovadoras.\",\r\n    \"fecha\": \"2024-02-05\",\r\n    \"hora\": \"18:00\",\r\n    \"lugar\": \"Espacio de Coworking Creativo\",\r\n    \"ponente\": \"Dr. Carlos Ramírez\"\r\n  },\r\n  {\r\n    \"titulo\": \"Charla sobre Ciberseguridad\",\r\n    \"descripcion\": \"Una charla informativa sobre las últimas tendencias en ciberseguridad.\",\r\n    \"fecha\": \"2023-10-08\",\r\n    \"hora\": \"12:45\",\r\n    \"lugar\": \"Auditorio de Seguridad Digital\",\r\n    \"ponente\": \"Dra. Laura Fernández\"\r\n  },\r\n  {\r\n    \"titulo\": \"Curso de Machine Learning\",\r\n    \"descripcion\": \"Un curso intensivo sobre machine learning y sus aplicaciones prácticas.\",\r\n    \"fecha\": \"2024-03-15\",\r\n    \"hora\": \"09:30\",\r\n    \"lugar\": \"Laboratorio de Investigación en IA\",\r\n    \"ponente\": \"Prof. Javier Torres\"\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/eventos"
+			},
+			"response": []
+		},
+		{
+			"name": "listar todos Eventos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/eventos"
+			},
+			"response": []
+		},
+		{
+			"name": "listar Evento por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/evento/2"
+			},
+			"response": []
+		}
+	]
+}
